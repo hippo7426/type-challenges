@@ -1,1 +1,2 @@
-type Length<T> = any
+type Length<T extends any[] | readonly any[]> = T['length']
+
